@@ -1,0 +1,52 @@
+
+
+
+/* logo section */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1140px;
+    height: 71px;
+}
+
+#menu{
+    font-weight: 500;
+    color: #8987A1;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    gap: 48px;
+    font-weight: bold;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+
+
+@media screen and (max-width:576px) {
+    header{
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+}
