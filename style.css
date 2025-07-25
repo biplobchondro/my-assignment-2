@@ -43,7 +43,7 @@ header{
     align-items: center;
     margin: 0 auto;
     margin-top: 30px;
-    width: 1140px;
+    max-width: 1140px;
     height: 71px;
 }
 
@@ -244,6 +244,15 @@ nav ul{
     border-radius: 14px;
 }
 
+.btn-shop{
+    background: transparent;
+    font-size: 16px;
+    border: none;
+    color: white;
+    font-family: "Noto Serif", serif;
+    display: block;
+}
+
 .latest-right{
     background-image: url(./assets/deal-zabo.png);
         background-size: cover;
@@ -304,21 +313,17 @@ footer{
     max-width: 1120px;
     padding: 50px 160px;
     gap: 110px;
-    /* background-color: aquamarine; */
 }
 
 .footer-logo{
     flex: 1;
     min-width: 248px;
-    /* height: 179px; */
-    /* background-color: navy; */
 }
 
 .footer-middle{
     display: flex;
     max-width: 600px;
     gap: 110px;
-    /* margin: 30px auto; */
 }
 
 .footer-links{
@@ -345,16 +350,29 @@ footer{
     gap: 24px;
     width: 246px;
     height: 36px;
-    /* background-color: #E95A08; */
 }
 
 
 @media screen and (max-width:576px) {
+    body{
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
     header{
         width: 100%;
+        padding: 0 20px;
     }
     nav ul{
         display: none;
+    }
+    .card{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 100px;
     }
 
     .banner{
@@ -372,10 +390,28 @@ footer{
 
     .feature{
         flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+    }
+    .feature-img{
+        width: 100%;
+        min-width: auto;
+    }
+    .feature-img img{
+        width: 100%;
+        height: auto;
+    }
+    .feature-title{
+        font-size: 28px;
         text-align: center;
     }
-
-
+    .feature-description{
+        text-align: center;
+    }
+    .feature-description ul li{
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
 
     footer{
         flex-direction: column;
