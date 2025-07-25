@@ -1,8 +1,23 @@
+/* font link */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.font-family{
+      font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
+
 /* extra section */
 .banner-color{
     font-size: 22px;
     font-weight: 600;
     color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
 }
 
 #color-1{
@@ -103,6 +118,7 @@ nav ul{
 
 .card-img{
     text-align: center;
+    font-family: "Inter", sans-serif;
     gap: 20px;
     background-color: #FFFFFF;
 }
@@ -160,6 +176,7 @@ nav ul{
 .feature-description{
     flex: 1;
     text-align: left;
+    font-family: "Noto Serif", serif;
 }
 
 .feature-description ul li{
@@ -171,6 +188,8 @@ nav ul{
 .card-container{
     text-align: center;
     margin-top: 133px;
+    font-family: "Noto Serif", serif;
+
 }
 
 .latest-baner{
@@ -178,6 +197,7 @@ nav ul{
     justify-content: center;
     margin-top: 119px;
     margin-bottom: 120px;
+    font-family: "Noto Serif", serif;
 }
 
 
@@ -194,9 +214,21 @@ nav ul{
     border: 1px solid #C8C8C8;
 }
 
+.banner-left-2 h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
 
 .banner-left-1 h3{
     font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.latest-right h2{
+    font-size: 40px;
     font-weight: bold;
     color: white;
 }
@@ -225,6 +257,97 @@ nav ul{
 }
 
 
+/* join section  */
+.join{
+    background-image: url(./assets/news-letter-bg.png);
+    height: 533px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.join-title h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 23px;
+}
+
+.subcribe-form{
+    margin: 0 auto;
+}
+
+.subcribe-form input{
+    padding: 15px 20px;
+    width: 644px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.subcribe-form button{
+    padding: 26px 50px;
+    color: white;
+    background-color: #E95A08;
+    border: none;
+    font-size: 16px;
+}
+
+/* footer section  */
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 1120px;
+    padding: 50px 160px;
+    gap: 110px;
+    /* background-color: aquamarine; */
+}
+
+.footer-logo{
+    flex: 1;
+    min-width: 248px;
+    /* height: 179px; */
+    /* background-color: navy; */
+}
+
+.footer-middle{
+    display: flex;
+    max-width: 600px;
+    gap: 110px;
+    /* margin: 30px auto; */
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-width: 170px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #6B7280;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+.footer-social{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 24px;
+    width: 246px;
+    height: 36px;
+    /* background-color: #E95A08; */
+}
+
 
 @media screen and (max-width:576px) {
     header{
@@ -250,5 +373,17 @@ nav ul{
     .feature{
         flex-direction: column;
         text-align: center;
+    }
+
+
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    .footer-middle{
+        flex-direction: column;
+        text-align: left;
     }
 }
