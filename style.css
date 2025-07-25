@@ -131,6 +131,99 @@ nav ul{
 }
 
 
+/* plants lover section */
+.feature{
+    margin: 0 auto;
+    margin-top: 196px;
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.feature-img{
+    flex: 1;
+    min-width: 350px;
+}
+
+.feature-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feature-title{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.feature-description{
+    flex: 1;
+    text-align: left;
+}
+
+.feature-description ul li{
+    margin-bottom: 20px;
+}
+
+
+/* Latest  Deals */
+.card-container{
+    text-align: center;
+    margin-top: 133px;
+}
+
+.latest-baner{
+    display: flex;
+    justify-content: center;
+    margin-top: 119px;
+    margin-bottom: 120px;
+}
+
+
+.banner-left-1{
+    background-image: url(./assets/deal-bloom.png);
+    background-size: cover;
+    width: 367px;
+    height: 201px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    border: 1px solid #C8C8C8;
+}
+
+
+.banner-left-1 h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.banner-left-2{
+    background-image: url(./assets/deal-ana.png);
+    background-size: cover;
+    width: 367px;
+    height: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.latest-right{
+    background-image: url(./assets/deal-zabo.png);
+        background-size: cover;
+    width: 773px;
+    height: 423px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28px;
+    border-radius: 22px;
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -152,5 +245,10 @@ nav ul{
 
     .banner-card{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature{
+        flex-direction: column;
+        text-align: center;
     }
 }
