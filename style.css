@@ -1,4 +1,24 @@
+/* extra section */
+.banner-color{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
 
+#color-1{
+    color: #E95A08;
+}
+
+#color-2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #E95A08;
+}
+
+#black{
+    font-size: 50px;
+    font-weight: bold;
+}
 
 
 /* logo section */
@@ -42,11 +62,95 @@ nav ul{
 
 
 
+/* banner section */
+.banner{
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1140px;
+    width: 100%;
+    height: auto;
+}
+
+.banner-left{
+    margin-top: 162px;
+    gap: 13px;
+}
+
+.banner-h1{
+    font-size: 65px;
+    font-weight: bold;
+}
+
+
+
+/* plants section */
+.card{
+    max-width: 1140px;
+    height: 1185px;
+    margin: auto;
+    text-align: center;
+}
+
+.banner-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 49px;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+.card-img{
+    text-align: center;
+    gap: 20px;
+    background-color: #FFFFFF;
+}
+
+.card-img h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.card-img p{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+.btn-primary{
+    max-width: 270px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 19px 80px;
+    border: none;
+    color: white;
+    background-color: #E95A08;
+}
+
+
+
+
 @media screen and (max-width:576px) {
     header{
         width: 100%;
     }
     nav ul{
         display: none;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        width: 100%;
+    }
+    .banner-left{
+        margin-top: 28px;
+    }
+
+    .banner-card{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
